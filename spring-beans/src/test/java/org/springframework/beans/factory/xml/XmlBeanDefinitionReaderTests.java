@@ -61,7 +61,8 @@ public class XmlBeanDefinitionReaderTests {
 		Resource resource = new InputStreamResource(getClass().getResourceAsStream("test.xml"));
 		XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(registry);
 		reader.setValidationMode(XmlBeanDefinitionReader.VALIDATION_DTD);
-		reader.loadBeanDefinitions(resource);
+		int count = reader.loadBeanDefinitions(resource);
+		System.out.println(count);
 		testBeanDefinitions(registry);
 	}
 

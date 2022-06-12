@@ -24,3 +24,5 @@
 ^http://www.w3.org/2000/xmlns/
 ^http://xmlunit.sourceforge.net.*
 ^http://xunitpatterns.com.*
+^https://checkstyle.org/dtds/configuration_1_3.dtd
+^http://www.springframework.org/schema/beans/spring-beans.xsd
